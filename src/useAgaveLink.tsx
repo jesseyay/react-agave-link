@@ -18,7 +18,7 @@ export const useAgaveLink = (config: UseAgaveLinkProps): UseAgaveLinkResponse =>
     }, [isReadyForInitialization, config]);
 
     const openLink = useCallback(
-        (overrideConfig: Partial<UseAgaveLinkProps>) => {
+        (overrideConfig: Partial<UseAgaveLinkProps> = {}) => {
             if (window.AgaveLink) {
                 window.AgaveLink.openLink({
                     ...config,

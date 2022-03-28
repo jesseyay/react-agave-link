@@ -14,7 +14,7 @@ export interface UseAgaveLinkProps {
 }
 
 export type UseAgaveLinkResponse = {
-    openLink: (config: UseAgaveLinkProps) => void;
+    openLink: (config?: UseAgaveLinkProps) => void;
     isReady: boolean;
     error: ErrorEvent | null;
 }
